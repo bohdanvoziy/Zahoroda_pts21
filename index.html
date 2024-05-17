@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js"></script>
+    <title>Оренда будинків</title>
+  </head>
+
+  <body>
+     
+    <header class="sticky-header">
+      <section class="top-nav">
+        <div class="header-logo">
+          Roof<span class="orange-text">Lease</span>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><a class="nav-item" href="#buy-objects">Купівля</a></li>
+          <li><a class="nav-item" href="#sales-tips">Продаж</a></li>
+          <li><a class="nav-item" href="#categories">Оренда</a></li>
+          <li><button class="button" href="#">Вхід</button></li>
+          <li><button class="button" href="#">Реєстрація</button></li>
+          <li><label class="button contact-button" for="contact-toggle">Зворотній зв'язок</label></li>
+
+
+        </ul>
+      </section>
+    </header>
+    <main>
+      <div class="main-container">
+        <div class="info-container">
+          <video autoplay loop muted>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+          <div class="info-content">
+            <div class="info-title">
+              Дім, що Мрії: Оренда та Купівля Будинків з Нами!
+            </div>
+            <div class="action-container">
+              <button class="action-button">Купівля</button>
+              <button class="action-button">Оренда</button>
+              <button class="action-button">Продаж</button>
+            </div>
+            <div class="search-container">
+              <input type="text" placeholder="Пошук" />
+              <button type="submit">Шукати</button>
+            </div>
+          </div>
+          <div class="search-mobil">
+            <img src="search.png" alt="Пошук" />
+            <span>Шукати</span>
+          </div>
+        </div>
+        <div class="buy-container">
+          <div class="buy-content">
+            <div class="buy-info">
+              <div class="buy-info-title">
+                Знайди свій ідеальний будинок з нами – де ваші мрії стають
+                реальністю!
+              </div>
+              <div class="buy-info-general-info">
+                <div class="general-info-element">
+                  <span class="general-amount-type">95%</span>
+                  <span class="general-info-type">клієнтів знайшли житло</span>
+                </div>
+                <div class="general-info-element">
+                  <span class="general-amount-type">10K+</span>
+                  <span class="general-info-type"
+                    >пропозицій для купівлі/продажу</span
+                  >
+                </div>
+                <div class="general-info-element">
+                  <span class="general-amount-type">300</span>
+                  <span class="general-info-type"
+                    >щоденно здійснених транзакцій</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="buy-objects" id="buy-objects">
+              <div class="buy-objects-title">Рекомендовані об’єкти</div>
+              <div class="sales-carousel-container" recomended-data-carousel>
+                <div
+                  class="recomended-objects-container"
+                  recomended-data-slides
+                >
+                  <div class="recomeded-object" recomended-data-active>
+                    <div
+                      class="recomeded-object-image-container image-container-1"
+                    ></div>
+                    <div class="recomeded-object-info">
+                      <div class="recomeded-object-price">$680,000</div>
+                      <div class="recomeded-object-description">
+                        Затишний будинок для сім’ї
+                      </div>
+                      <div class="recomeded-object-address">
+                        м. Львів, вул. Б.Хмельницького, 29
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recomeded-object">
+                    <div
+                      class="recomeded-object-image-container image-container-2"
+                    ></div>
+                    <div class="recomeded-object-info">
+                      <div class="recomeded-object-price">$549,000</div>
+                      <div class="recomeded-object-description">
+                        Сучасний будинок
+                      </div>
+                      <div class="recomeded-object-address">
+                        м. Львів, вул. П.Орлика, 74а
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recomeded-object">
+                    <div
+                      class="recomeded-object-image-container image-container-3"
+                    ></div>
+                    <div class="recomeded-object-info">
+                      <div class="recomeded-object-price">$739,000</div>
+                      <div class="recomeded-object-description">
+                        Звичайний родинний будинок
+                      </div>
+                      <div class="recomeded-object-address">
+                        м. Львів, вул. Кульпарківська, 69
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-button prev"
+                  recomended-data-carousel-button="prev"
+                >
+                  <
+                </button>
+                <button
+                  class="carousel-button next"
+                  recomended-data-carousel-button="next"
+                >
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sales-tips-container"id="sales-tips">
+          <div class="sales-tips">
+            Як продати свій будинок найлегшим<br />способом в RoofLease
+          </div>
+          <div class="sales-carousel-container" sales-data-carousel>
+            <div class="sales-offers-container" sales-data-slides>
+              <div class="sales-offer" sales-data-active>
+                <div class="sales-offers-text centered-text">
+                  Ми оцінимо Ваш будинок і допоможемо підготувати його до
+                  продажу
+                </div>
+                <div class="sales-offers-photo1 sales-offers-photo"></div>
+              </div>
+              <div class="sales-offer">
+                <div class="sales-offers-text centered-text">
+                  Знайдемо найкращу ціну, яка працюватиме для Вас
+                </div>
+                <div
+                  class="sales-offers-photo2 sales-offers-photo centered-text"
+                ></div>
+              </div>
+              <div class="sales-offer">
+                <div class="sales-offers-text centered-text">
+                  Подбаємо про процес продажу від початку і до самого кінця
+                </div>
+                <div class="sales-offers-photo3 sales-offers-photo"></div>
+              </div>
+            </div>
+            <button
+              class="carousel-button prev"
+              sales-data-carousel-button="prev"
+            >
+              <
+            </button>
+            <button
+              class="carousel-button next"
+              sales-data-carousel-button="next"
+            >
+              >
+            </button>
+          </div>
+        </div>
+        <div class="outter-category-container">
+          <div class="categories-container"id="categories">
+            <div class="categories-title">Категорії об'єктів</div>
+            <div class="category-row">
+              <div class="category-block">
+                <img src="3.1.png" alt="Фото будинків" />
+                <div class="category-info">
+                  <div class="category-title">Будинки</div>
+                  <div class="category-offers">1326 пропозицій</div>
+                </div>
+              </div>
+              <div class="category-block">
+                <img src="3.2.png" alt="Фото квартир" />
+                <div class="category-info">
+                  <div class="category-title">Квартири</div>
+                  <div class="category-offers">2453 пропозиції</div>
+                </div>
+              </div>
+              <div class="category-block">
+                <img src="3.3.png" alt="Фото кімнат" />
+                <div class="category-info">
+                  <div class="category-title">Кімнати</div>
+                  <div class="category-offers">789 пропозицій</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="menu-info">
+          <div class="menu-info-logo header-logo">
+            Roof<span class="orange-text">Lease</span>
+          </div>
+          <div class="menu-info-main">
+            <div class="info-main-element">
+              <div class="main-element-title">Купівля</div>
+              <div class="main-element-position">Квартиру</div>
+              <div class="main-element-position">Будинок</div>
+              <div class="main-element-position">Ділянку</div>
+            </div>
+            <div class="info-main-element">
+              <div class="main-element-title">Оренда</div>
+              <div class="main-element-position">Квартиру</div>
+              <div class="main-element-position">Будинок</div>
+              <div class="main-element-position">Ділянку</div>
+              <div class="main-element-position">Кімнату</div>
+              <div class="main-element-position">Подобово</div>
+            </div>
+            <div class="info-main-element">
+              <div class="main-element-title">Продаж</div>
+              <div class="main-element-position">Додати оголошення</div>
+              <div class="main-element-position">Через рієлтора</div>
+              <div class="main-element-position">
+                Через агенство нерухомості
+              </div>
+            </div>
+          </div>
+          <div class="menu-info-contact">
+            <div class="main-element-title">Контакти</div>
+            <div class="main-element-position">rooflease@gmail.com</div>
+            <div class="main-element-position">+38 (099) 865 43 60</div>
+            <div class="main-element-position">
+              м. Львів, вул. Стрийська, 42
+            </div>
+          </div>
+        </div>
+        <div class="social-info">
+          <div class="social-info-container">
+            <div class="subscribe-title">Слідкуйте за нами:</div>
+            <div class="subscribe-title-block">
+              <div class="social-image-container image-telegram"></div>
+              <div class="social-image-container image-instagram"></div>
+              <div class="social-image-container image-facebook"></div>
+              <div class="social-image-container image-linkedin"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+   <input type="checkbox" id="contact-toggle" class="contact-toggle">
+<div class="contact-modal">
+  <label for="contact-toggle" class="close-button">×</label>
+  <div class="contact-form">
+    <h2>Зворотній зв'язок</h2>
+    <form>
+      <!-- Ваша форма зворотнього зв'язку тут -->
+      <label for="name">Ім'я:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Повідомлення:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Надіслати</button>
+    </form>
+  </div>
+</div>
+  </body>
+</html>
