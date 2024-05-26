@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /Zahoroda_pts21
+
+User-agent: Googlebot
+Allow: /
